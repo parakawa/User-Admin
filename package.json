@@ -1,0 +1,16 @@
+{
+  "name": "user-admin",
+  "version": "1.0.0",
+  "description": "my first node app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "consolidate": "^0.14.5",
+    "express": "^4.15.2",
+    "swig": "^1.4.2"
+  }
+}
