@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 
-var uristring = process.env.MONGODB_URI ||
+var uristring = process.env.MONGOLAB_URI ||
   'mongodb://localhost/user_admin';
 
 // **************  Conexión a la base de datos
