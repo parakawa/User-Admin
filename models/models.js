@@ -1,12 +1,9 @@
 // **************  Zona de importación de paquetes
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-var data_config = require('../controllers/data_config.js');
 
-var url = data_config.mongolab.MONGOLAB_URI;
 
 var uristring = process.env.MONGODB_URI ||
-  url || 
   'mongodb://localhost/user_admin';
 
 // **************  Conexión a la base de datos
