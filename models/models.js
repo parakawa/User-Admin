@@ -5,7 +5,7 @@ var data_config = require('../controllers/data_config.js');
 
 var url = data_config.mongolab.MONGOLAB_URI;
 
-var uristring = 
+var uristring = process.env.MONGODB_URI ||
   url || 
   'mongodb://localhost/user_admin';
 
