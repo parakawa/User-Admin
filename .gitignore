@@ -1,4 +1,3 @@
 node_modules
 uploads
 /.env
-controllers/data_config.js
