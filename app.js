@@ -1,4 +1,5 @@
 var express = require('express');
+var http = require('http');
 var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 const swig = require('swig');
@@ -16,6 +17,6 @@ app.engine('html', swig.renderFile);
 app.use(express.static("public"));
 app.use('/',routes);
 
-app.listen(8000,function(){
+app.listen(process.env.PORT || 8000 ,function(){
 	console.log("La app corriendo en el puerto 8000");
 })
