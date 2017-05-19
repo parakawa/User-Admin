@@ -8,3 +8,13 @@ exports.admin = function (req, res){
 		res.render('admin/index', {users: users });
 	});
 };
+
+exports.edit = function(req, res){
+	var id_user = req.params._id;
+	console.log(id_user);
+	models.User.findOne({"_id": id_user},function(err,user){
+		res.render("admin/edit", {user: user});
+	});
+};
+
+var models = require('../models/models.js'); 

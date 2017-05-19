@@ -4,6 +4,7 @@
   "description": "my first node app",
   "main": "app.js",
   "scripts": {
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -14,5 +15,8 @@
     "express": "^4.15.2",
     "mongoose": "^4.9.5",
     "swig": "^1.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
   }
 }
