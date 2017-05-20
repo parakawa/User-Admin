@@ -32,8 +32,10 @@
 			      <td>{{user.firstname}}</td>
 			      <td>{{user.lastname}}</td>
 			      <td>{{user.email}}</td>
-			      <td><a class="" href="/admin/edit/{user._id}">Editar</a></td>
-			      <td><a class="">Eliminar</a></td>
+			      <td><a class="" href="/admin/edit/{{""+user._id}}">Editar</a></td>
+			      <td><form method="POST" action="/admin/{{""+user._id}}?_method=delete">
+			      <button type="submit" class="btn btn-danger">Eliminar</button>
+			      </form></td>
 			    </tr>
 			    {%endfor%}
 			  </tbody>
